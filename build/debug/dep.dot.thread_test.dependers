@@ -2,5 +2,5 @@ digraph GG {
 node [
   fontsize = "12"
 ];
-    "node3" [ label="thread_test" shape="house"];
+    "node4" [ label="thread_test" shape="house"];
 }

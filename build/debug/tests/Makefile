@@ -151,6 +151,34 @@ bsa/fast:
 .PHONY : bsa/fast
 
 # Convenience name for target.
+tests/CMakeFiles/countdownlatch_test1.dir/rule:
+	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/countdownlatch_test1.dir/rule
+.PHONY : tests/CMakeFiles/countdownlatch_test1.dir/rule
+
+# Convenience name for target.
+countdownlatch_test1: tests/CMakeFiles/countdownlatch_test1.dir/rule
+.PHONY : countdownlatch_test1
+
+# fast build rule for target.
+countdownlatch_test1/fast:
+	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f tests/CMakeFiles/countdownlatch_test1.dir/build.make tests/CMakeFiles/countdownlatch_test1.dir/build
+.PHONY : countdownlatch_test1/fast
+
+# Convenience name for target.
+tests/CMakeFiles/countdownlatch_test2.dir/rule:
+	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/countdownlatch_test2.dir/rule
+.PHONY : tests/CMakeFiles/countdownlatch_test2.dir/rule
+
+# Convenience name for target.
+countdownlatch_test2: tests/CMakeFiles/countdownlatch_test2.dir/rule
+.PHONY : countdownlatch_test2
+
+# fast build rule for target.
+countdownlatch_test2/fast:
+	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f tests/CMakeFiles/countdownlatch_test2.dir/build.make tests/CMakeFiles/countdownlatch_test2.dir/build
+.PHONY : countdownlatch_test2/fast
+
+# Convenience name for target.
 tests/CMakeFiles/deadlock_test.dir/rule:
 	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/deadlock_test.dir/rule
 .PHONY : tests/CMakeFiles/deadlock_test.dir/rule
@@ -191,6 +219,54 @@ pthread_atfork_test: tests/CMakeFiles/pthread_atfork_test.dir/rule
 pthread_atfork_test/fast:
 	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f tests/CMakeFiles/pthread_atfork_test.dir/build.make tests/CMakeFiles/pthread_atfork_test.dir/build
 .PHONY : pthread_atfork_test/fast
+
+CountDownLatch_test1.o: CountDownLatch_test1.cc.o
+.PHONY : CountDownLatch_test1.o
+
+# target to build an object file
+CountDownLatch_test1.cc.o:
+	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f tests/CMakeFiles/countdownlatch_test1.dir/build.make tests/CMakeFiles/countdownlatch_test1.dir/CountDownLatch_test1.cc.o
+.PHONY : CountDownLatch_test1.cc.o
+
+CountDownLatch_test1.i: CountDownLatch_test1.cc.i
+.PHONY : CountDownLatch_test1.i
+
+# target to preprocess a source file
+CountDownLatch_test1.cc.i:
+	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f tests/CMakeFiles/countdownlatch_test1.dir/build.make tests/CMakeFiles/countdownlatch_test1.dir/CountDownLatch_test1.cc.i
+.PHONY : CountDownLatch_test1.cc.i
+
+CountDownLatch_test1.s: CountDownLatch_test1.cc.s
+.PHONY : CountDownLatch_test1.s
+
+# target to generate assembly for a file
+CountDownLatch_test1.cc.s:
+	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f tests/CMakeFiles/countdownlatch_test1.dir/build.make tests/CMakeFiles/countdownlatch_test1.dir/CountDownLatch_test1.cc.s
+.PHONY : CountDownLatch_test1.cc.s
+
+CountDownLatch_test2.o: CountDownLatch_test2.cc.o
+.PHONY : CountDownLatch_test2.o
+
+# target to build an object file
+CountDownLatch_test2.cc.o:
+	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f tests/CMakeFiles/countdownlatch_test2.dir/build.make tests/CMakeFiles/countdownlatch_test2.dir/CountDownLatch_test2.cc.o
+.PHONY : CountDownLatch_test2.cc.o
+
+CountDownLatch_test2.i: CountDownLatch_test2.cc.i
+.PHONY : CountDownLatch_test2.i
+
+# target to preprocess a source file
+CountDownLatch_test2.cc.i:
+	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f tests/CMakeFiles/countdownlatch_test2.dir/build.make tests/CMakeFiles/countdownlatch_test2.dir/CountDownLatch_test2.cc.i
+.PHONY : CountDownLatch_test2.cc.i
+
+CountDownLatch_test2.s: CountDownLatch_test2.cc.s
+.PHONY : CountDownLatch_test2.s
+
+# target to generate assembly for a file
+CountDownLatch_test2.cc.s:
+	cd /home/xsun/programming/cppCourse/ModouAnalyze/build/debug && $(MAKE) -f tests/CMakeFiles/countdownlatch_test2.dir/build.make tests/CMakeFiles/countdownlatch_test2.dir/CountDownLatch_test2.cc.s
+.PHONY : CountDownLatch_test2.cc.s
 
 Deadlock_test.o: Deadlock_test.cc.o
 .PHONY : Deadlock_test.o
@@ -295,6 +371,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... bsa"
+	@echo "... countdownlatch_test1"
+	@echo "... countdownlatch_test2"
 	@echo "... deadlock_test"
 	@echo "... deadlock_test2"
 	@echo "... edit_cache"
@@ -304,6 +382,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... pthread_atfork_test"
 	@echo "... rebuild_cache"
+	@echo "... CountDownLatch_test1.o"
+	@echo "... CountDownLatch_test1.i"
+	@echo "... CountDownLatch_test1.s"
+	@echo "... CountDownLatch_test2.o"
+	@echo "... CountDownLatch_test2.i"
+	@echo "... CountDownLatch_test2.s"
 	@echo "... Deadlock_test.o"
 	@echo "... Deadlock_test.i"
 	@echo "... Deadlock_test.s"

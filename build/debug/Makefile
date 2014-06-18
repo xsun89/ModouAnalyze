@@ -176,6 +176,19 @@ exception_test/fast:
 .PHONY : exception_test/fast
 
 #=============================================================================
+# Target rules for targets named mutex_test
+
+# Build rule for target.
+mutex_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mutex_test
+.PHONY : mutex_test
+
+# fast build rule for target.
+mutex_test/fast:
+	$(MAKE) -f muduo/base/tests/CMakeFiles/mutex_test.dir/build.make muduo/base/tests/CMakeFiles/mutex_test.dir/build
+.PHONY : mutex_test/fast
+
+#=============================================================================
 # Target rules for targets named thread_test
 
 # Build rule for target.
@@ -213,6 +226,32 @@ bsa: cmake_check_build_system
 bsa/fast:
 	$(MAKE) -f tests/CMakeFiles/bsa.dir/build.make tests/CMakeFiles/bsa.dir/build
 .PHONY : bsa/fast
+
+#=============================================================================
+# Target rules for targets named countdownlatch_test1
+
+# Build rule for target.
+countdownlatch_test1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 countdownlatch_test1
+.PHONY : countdownlatch_test1
+
+# fast build rule for target.
+countdownlatch_test1/fast:
+	$(MAKE) -f tests/CMakeFiles/countdownlatch_test1.dir/build.make tests/CMakeFiles/countdownlatch_test1.dir/build
+.PHONY : countdownlatch_test1/fast
+
+#=============================================================================
+# Target rules for targets named countdownlatch_test2
+
+# Build rule for target.
+countdownlatch_test2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 countdownlatch_test2
+.PHONY : countdownlatch_test2
+
+# fast build rule for target.
+countdownlatch_test2/fast:
+	$(MAKE) -f tests/CMakeFiles/countdownlatch_test2.dir/build.make tests/CMakeFiles/countdownlatch_test2.dir/build
+.PHONY : countdownlatch_test2/fast
 
 #=============================================================================
 # Target rules for targets named deadlock_test
@@ -268,9 +307,12 @@ help:
 	@echo "... muduo_base"
 	@echo "... atomic_unittest"
 	@echo "... exception_test"
+	@echo "... mutex_test"
 	@echo "... thread_test"
 	@echo "... timestamp_unittest"
 	@echo "... bsa"
+	@echo "... countdownlatch_test1"
+	@echo "... countdownlatch_test2"
 	@echo "... deadlock_test"
 	@echo "... deadlock_test2"
 	@echo "... pthread_atfork_test"

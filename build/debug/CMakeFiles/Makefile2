@@ -73,7 +73,7 @@ muduo/base/preinstall: muduo/base/tests/preinstall
 muduo/base/CMakeFiles/muduo_base.dir/all:
 	$(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/depend
 	$(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  6 7 8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  8 9 10 11 12
 	@echo "Built target muduo_base"
 .PHONY : muduo/base/CMakeFiles/muduo_base.dir/all
 
@@ -83,7 +83,7 @@ all: muduo/base/CMakeFiles/muduo_base.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/CMakeFiles/muduo_base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/CMakeFiles/muduo_base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 0
 .PHONY : muduo/base/CMakeFiles/muduo_base.dir/rule
@@ -107,6 +107,7 @@ clean: muduo/base/CMakeFiles/muduo_base.dir/clean
 # Convenience name for "all" pass in the directory.
 muduo/base/tests/all: muduo/base/tests/CMakeFiles/atomic_unittest.dir/all
 muduo/base/tests/all: muduo/base/tests/CMakeFiles/exception_test.dir/all
+muduo/base/tests/all: muduo/base/tests/CMakeFiles/mutex_test.dir/all
 muduo/base/tests/all: muduo/base/tests/CMakeFiles/thread_test.dir/all
 muduo/base/tests/all: muduo/base/tests/CMakeFiles/timestamp_unittest.dir/all
 .PHONY : muduo/base/tests/all
@@ -114,6 +115,7 @@ muduo/base/tests/all: muduo/base/tests/CMakeFiles/timestamp_unittest.dir/all
 # Convenience name for "clean" pass in the directory.
 muduo/base/tests/clean: muduo/base/tests/CMakeFiles/atomic_unittest.dir/clean
 muduo/base/tests/clean: muduo/base/tests/CMakeFiles/exception_test.dir/clean
+muduo/base/tests/clean: muduo/base/tests/CMakeFiles/mutex_test.dir/clean
 muduo/base/tests/clean: muduo/base/tests/CMakeFiles/thread_test.dir/clean
 muduo/base/tests/clean: muduo/base/tests/CMakeFiles/timestamp_unittest.dir/clean
 .PHONY : muduo/base/tests/clean
@@ -139,7 +141,7 @@ all: muduo/base/tests/CMakeFiles/atomic_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/atomic_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/atomic_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/atomic_unittest.dir/rule
@@ -164,7 +166,7 @@ clean: muduo/base/tests/CMakeFiles/atomic_unittest.dir/clean
 muduo/base/tests/CMakeFiles/exception_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/exception_test.dir/build.make muduo/base/tests/CMakeFiles/exception_test.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/exception_test.dir/build.make muduo/base/tests/CMakeFiles/exception_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  7
 	@echo "Built target exception_test"
 .PHONY : muduo/base/tests/CMakeFiles/exception_test.dir/all
 
@@ -174,7 +176,7 @@ all: muduo/base/tests/CMakeFiles/exception_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/exception_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/exception_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/exception_test.dir/rule
@@ -193,13 +195,48 @@ clean: muduo/base/tests/CMakeFiles/exception_test.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target muduo/base/tests/CMakeFiles/mutex_test.dir
+
+# All Build rule for target.
+muduo/base/tests/CMakeFiles/mutex_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
+	$(MAKE) -f muduo/base/tests/CMakeFiles/mutex_test.dir/build.make muduo/base/tests/CMakeFiles/mutex_test.dir/depend
+	$(MAKE) -f muduo/base/tests/CMakeFiles/mutex_test.dir/build.make muduo/base/tests/CMakeFiles/mutex_test.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  13
+	@echo "Built target mutex_test"
+.PHONY : muduo/base/tests/CMakeFiles/mutex_test.dir/all
+
+# Include target in all.
+all: muduo/base/tests/CMakeFiles/mutex_test.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+muduo/base/tests/CMakeFiles/mutex_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/mutex_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 0
+.PHONY : muduo/base/tests/CMakeFiles/mutex_test.dir/rule
+
+# Convenience name for target.
+mutex_test: muduo/base/tests/CMakeFiles/mutex_test.dir/rule
+.PHONY : mutex_test
+
+# clean rule for target.
+muduo/base/tests/CMakeFiles/mutex_test.dir/clean:
+	$(MAKE) -f muduo/base/tests/CMakeFiles/mutex_test.dir/build.make muduo/base/tests/CMakeFiles/mutex_test.dir/clean
+.PHONY : muduo/base/tests/CMakeFiles/mutex_test.dir/clean
+
+# clean rule for target.
+clean: muduo/base/tests/CMakeFiles/mutex_test.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target muduo/base/tests/CMakeFiles/thread_test.dir
 
 # All Build rule for target.
 muduo/base/tests/CMakeFiles/thread_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/thread_test.dir/build.make muduo/base/tests/CMakeFiles/thread_test.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/thread_test.dir/build.make muduo/base/tests/CMakeFiles/thread_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  15
 	@echo "Built target thread_test"
 .PHONY : muduo/base/tests/CMakeFiles/thread_test.dir/all
 
@@ -209,7 +246,7 @@ all: muduo/base/tests/CMakeFiles/thread_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/thread_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/thread_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/thread_test.dir/rule
@@ -234,7 +271,7 @@ clean: muduo/base/tests/CMakeFiles/thread_test.dir/clean
 muduo/base/tests/CMakeFiles/timestamp_unittest.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/tests/CMakeFiles/timestamp_unittest.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/tests/CMakeFiles/timestamp_unittest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  11
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  16
 	@echo "Built target timestamp_unittest"
 .PHONY : muduo/base/tests/CMakeFiles/timestamp_unittest.dir/all
 
@@ -244,7 +281,7 @@ all: muduo/base/tests/CMakeFiles/timestamp_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/timestamp_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/timestamp_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/timestamp_unittest.dir/rule
@@ -267,6 +304,8 @@ clean: muduo/base/tests/CMakeFiles/timestamp_unittest.dir/clean
 
 # Convenience name for "all" pass in the directory.
 tests/all: tests/CMakeFiles/bsa.dir/all
+tests/all: tests/CMakeFiles/countdownlatch_test1.dir/all
+tests/all: tests/CMakeFiles/countdownlatch_test2.dir/all
 tests/all: tests/CMakeFiles/deadlock_test.dir/all
 tests/all: tests/CMakeFiles/deadlock_test2.dir/all
 tests/all: tests/CMakeFiles/pthread_atfork_test.dir/all
@@ -274,6 +313,8 @@ tests/all: tests/CMakeFiles/pthread_atfork_test.dir/all
 
 # Convenience name for "clean" pass in the directory.
 tests/clean: tests/CMakeFiles/bsa.dir/clean
+tests/clean: tests/CMakeFiles/countdownlatch_test1.dir/clean
+tests/clean: tests/CMakeFiles/countdownlatch_test2.dir/clean
 tests/clean: tests/CMakeFiles/deadlock_test.dir/clean
 tests/clean: tests/CMakeFiles/deadlock_test2.dir/clean
 tests/clean: tests/CMakeFiles/pthread_atfork_test.dir/clean
@@ -319,13 +360,83 @@ clean: tests/CMakeFiles/bsa.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target tests/CMakeFiles/countdownlatch_test1.dir
+
+# All Build rule for target.
+tests/CMakeFiles/countdownlatch_test1.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
+	$(MAKE) -f tests/CMakeFiles/countdownlatch_test1.dir/build.make tests/CMakeFiles/countdownlatch_test1.dir/depend
+	$(MAKE) -f tests/CMakeFiles/countdownlatch_test1.dir/build.make tests/CMakeFiles/countdownlatch_test1.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  3
+	@echo "Built target countdownlatch_test1"
+.PHONY : tests/CMakeFiles/countdownlatch_test1.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/countdownlatch_test1.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/countdownlatch_test1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/countdownlatch_test1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 0
+.PHONY : tests/CMakeFiles/countdownlatch_test1.dir/rule
+
+# Convenience name for target.
+countdownlatch_test1: tests/CMakeFiles/countdownlatch_test1.dir/rule
+.PHONY : countdownlatch_test1
+
+# clean rule for target.
+tests/CMakeFiles/countdownlatch_test1.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/countdownlatch_test1.dir/build.make tests/CMakeFiles/countdownlatch_test1.dir/clean
+.PHONY : tests/CMakeFiles/countdownlatch_test1.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/countdownlatch_test1.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/countdownlatch_test2.dir
+
+# All Build rule for target.
+tests/CMakeFiles/countdownlatch_test2.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
+	$(MAKE) -f tests/CMakeFiles/countdownlatch_test2.dir/build.make tests/CMakeFiles/countdownlatch_test2.dir/depend
+	$(MAKE) -f tests/CMakeFiles/countdownlatch_test2.dir/build.make tests/CMakeFiles/countdownlatch_test2.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  4
+	@echo "Built target countdownlatch_test2"
+.PHONY : tests/CMakeFiles/countdownlatch_test2.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/countdownlatch_test2.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/countdownlatch_test2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/countdownlatch_test2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles 0
+.PHONY : tests/CMakeFiles/countdownlatch_test2.dir/rule
+
+# Convenience name for target.
+countdownlatch_test2: tests/CMakeFiles/countdownlatch_test2.dir/rule
+.PHONY : countdownlatch_test2
+
+# clean rule for target.
+tests/CMakeFiles/countdownlatch_test2.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/countdownlatch_test2.dir/build.make tests/CMakeFiles/countdownlatch_test2.dir/clean
+.PHONY : tests/CMakeFiles/countdownlatch_test2.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/countdownlatch_test2.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target tests/CMakeFiles/deadlock_test.dir
 
 # All Build rule for target.
 tests/CMakeFiles/deadlock_test.dir/all:
 	$(MAKE) -f tests/CMakeFiles/deadlock_test.dir/build.make tests/CMakeFiles/deadlock_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/deadlock_test.dir/build.make tests/CMakeFiles/deadlock_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  5
 	@echo "Built target deadlock_test"
 .PHONY : tests/CMakeFiles/deadlock_test.dir/all
 
@@ -360,7 +471,7 @@ clean: tests/CMakeFiles/deadlock_test.dir/clean
 tests/CMakeFiles/deadlock_test2.dir/all:
 	$(MAKE) -f tests/CMakeFiles/deadlock_test2.dir/build.make tests/CMakeFiles/deadlock_test2.dir/depend
 	$(MAKE) -f tests/CMakeFiles/deadlock_test2.dir/build.make tests/CMakeFiles/deadlock_test2.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  6
 	@echo "Built target deadlock_test2"
 .PHONY : tests/CMakeFiles/deadlock_test2.dir/all
 
@@ -395,7 +506,7 @@ clean: tests/CMakeFiles/deadlock_test2.dir/clean
 tests/CMakeFiles/pthread_atfork_test.dir/all:
 	$(MAKE) -f tests/CMakeFiles/pthread_atfork_test.dir/build.make tests/CMakeFiles/pthread_atfork_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/pthread_atfork_test.dir/build.make tests/CMakeFiles/pthread_atfork_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/CMakeFiles  14
 	@echo "Built target pthread_atfork_test"
 .PHONY : tests/CMakeFiles/pthread_atfork_test.dir/all
 

@@ -38,7 +38,10 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/muduo/base" TYPE FILE FILES
+    "/home/xsun/programming/cppCourse/ModouAnalyze/jmuduo/muduo/base/CountDownLatch.h"
+    "/home/xsun/programming/cppCourse/ModouAnalyze/jmuduo/muduo/base/Condition.h"
     "/home/xsun/programming/cppCourse/ModouAnalyze/jmuduo/muduo/base/Atomic.h"
+    "/home/xsun/programming/cppCourse/ModouAnalyze/jmuduo/muduo/base/Mutex.h"
     "/home/xsun/programming/cppCourse/ModouAnalyze/jmuduo/muduo/base/Types.h"
     "/home/xsun/programming/cppCourse/ModouAnalyze/jmuduo/muduo/base/Thread.h"
     "/home/xsun/programming/cppCourse/ModouAnalyze/jmuduo/muduo/base/Exception.h"

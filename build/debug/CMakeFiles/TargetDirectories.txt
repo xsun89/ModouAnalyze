@@ -1,9 +1,12 @@
 /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/muduo/base/tests/CMakeFiles/atomic_unittest.dir
 /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/tests/CMakeFiles/bsa.dir
+/home/xsun/programming/cppCourse/ModouAnalyze/build/debug/tests/CMakeFiles/countdownlatch_test1.dir
+/home/xsun/programming/cppCourse/ModouAnalyze/build/debug/tests/CMakeFiles/countdownlatch_test2.dir
 /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/tests/CMakeFiles/deadlock_test.dir
 /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/tests/CMakeFiles/deadlock_test2.dir
 /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/muduo/base/tests/CMakeFiles/exception_test.dir
 /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/muduo/base/CMakeFiles/muduo_base.dir
+/home/xsun/programming/cppCourse/ModouAnalyze/build/debug/muduo/base/tests/CMakeFiles/mutex_test.dir
 /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/tests/CMakeFiles/pthread_atfork_test.dir
 /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/muduo/base/tests/CMakeFiles/thread_test.dir
 /home/xsun/programming/cppCourse/ModouAnalyze/build/debug/muduo/base/tests/CMakeFiles/timestamp_unittest.dir

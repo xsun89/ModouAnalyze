@@ -5,10 +5,16 @@ node [
     "node0" [ label="muduo_base" shape="diamond"];
     "node1" [ label="atomic_unittest" shape="house"];
     "node1" -> "node0" // muduo_base -> atomic_unittest
+    "node7" [ label="countdownlatch_test1" shape="house"];
+    "node7" -> "node0" // muduo_base -> countdownlatch_test1
+    "node8" [ label="countdownlatch_test2" shape="house"];
+    "node8" -> "node0" // muduo_base -> countdownlatch_test2
     "node2" [ label="exception_test" shape="house"];
     "node2" -> "node0" // muduo_base -> exception_test
-    "node3" [ label="thread_test" shape="house"];
-    "node3" -> "node0" // muduo_base -> thread_test
-    "node4" [ label="timestamp_unittest" shape="house"];
-    "node4" -> "node0" // muduo_base -> timestamp_unittest
+    "node3" [ label="mutex_test" shape="house"];
+    "node3" -> "node0" // muduo_base -> mutex_test
+    "node4" [ label="thread_test" shape="house"];
+    "node4" -> "node0" // muduo_base -> thread_test
+    "node5" [ label="timestamp_unittest" shape="house"];
+    "node5" -> "node0" // muduo_base -> timestamp_unittest
 }
